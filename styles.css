@@ -167,3 +167,28 @@ h1 em { color:var(--lime); font-style:normal; }
 .dp-next i { display:block; height:7px; margin:4px 0; border-radius:5px; background:#376467; }
 .dp-next i:first-child { width:75%; background:#c9ff45; }
 @media (max-width:520px){.art-dataprev-real{padding:10px}.dataprev-ui{grid-template-columns:30% 70%}.dp-main{padding:12px 10px}.dp-main h4{font-size:11px}.dp-panel{display:none}.dp-metrics{gap:4px}.dp-metrics span{padding:7px 5px}.dp-sidebar{padding:11px 8px}}
+
+
+/* Concurso Gen artwork v3 */
+.art-concurso-gen { display:block; padding:15px; background:radial-gradient(circle at 88% 10%,#1e6a64 0,transparent 34%),linear-gradient(145deg,#06191d,#092f32 58%,#0c4440); }
+.art-concurso-gen::before { content:""; position:absolute; inset:0; opacity:.13; background-image:linear-gradient(#74e8d3 1px,transparent 1px),linear-gradient(90deg,#74e8d3 1px,transparent 1px); background-size:30px 30px; }
+.art-concurso-gen .live-badge { top:11px; right:11px; padding:7px 10px; font-size:8px; }
+.cg-window { position:relative; z-index:2; height:100%; overflow:hidden; border:1px solid #78dfd066; border-radius:11px; background:#f7faf9; box-shadow:0 18px 44px #001417a8; color:#15383b; }
+.cg-header { height:48px; display:flex; align-items:center; gap:9px; padding:0 160px 0 13px; border-bottom:1px solid #d6e7e4; background:#fff; white-space:nowrap; }
+.cg-logo { width:27px; height:27px; display:grid; place-items:center; border-radius:8px; background:linear-gradient(145deg,#42d7be,#a8f05c); color:#06282b; font:900 9px var(--font-geist-mono),monospace; box-shadow:0 5px 12px #2d9e8d33; }
+.cg-name { color:#12383b; font:800 11px var(--font-geist-mono),monospace; letter-spacing:-.02em; }
+.cg-body { padding:14px 15px; }
+.cg-kicker { display:block; color:#42817c; font:700 6px var(--font-geist-mono),monospace; letter-spacing:.15em; text-transform:uppercase; }
+.cg-body h4 { margin:7px 0 11px; max-width:330px; color:#12383b; font-size:15px; line-height:1.08; letter-spacing:-.03em; }
+.cg-metrics { display:grid; grid-template-columns:repeat(3,1fr); gap:7px; }
+.cg-metrics span { padding:8px 9px; border:1px solid #d7e5e2; border-radius:7px; background:#fff; color:#6a8582; font:600 6px/1.25 var(--font-geist-mono),monospace; }
+.cg-metrics b { display:block; margin-bottom:3px; color:#153d40; font-size:12px; }
+.cg-lower { display:grid; grid-template-columns:1.35fr .65fr; gap:7px; margin-top:8px; }
+.cg-progress,.cg-action { height:54px; padding:9px; border:1px solid #d6e6e3; border-radius:7px; background:#fff; }
+.cg-progress small { display:block; margin-bottom:7px; color:#6f8986; font:700 6px var(--font-geist-mono),monospace; }
+.cg-progress i { display:block; height:5px; margin:5px 0; border-radius:10px; background:#d7e8e5; }
+.cg-progress i:nth-of-type(1) { width:88%; background:#4dd9c1; }
+.cg-progress i:nth-of-type(2) { width:63%; background:#9ae75c; }
+.cg-action { display:grid; place-items:center; background:linear-gradient(145deg,#103d40,#0b2d30); color:#dff8f2; text-align:center; font:800 7px/1.4 var(--font-geist-mono),monospace; }
+.cg-action b { display:block; color:#c9ff45; font-size:13px; }
+@media (max-width:520px){.art-concurso-gen{padding:10px}.cg-header{padding-right:145px}.cg-body{padding:11px 12px}.cg-body h4{font-size:13px}.cg-lower{display:none}.cg-metrics{gap:4px}.cg-metrics span{padding:7px 5px}}
